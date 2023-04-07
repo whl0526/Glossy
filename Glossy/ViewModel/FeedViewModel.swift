@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import FirebaseFirestore
 
 class FeedViewModel {
     
