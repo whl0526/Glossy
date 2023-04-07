@@ -4,26 +4,35 @@
 //
 //  Created by Hyesung Jeon on 2023/03/31.
 //
-
+import AVFoundation
 import UIKit
+import Firebase
 
 class CreatePostViewController: UIViewController {
 
+    let db = Firestore.firestore()
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        navigationController?.setNavigationBarHidden(true, animated: false)
     }
-    
+    private func didTapTakePicuture() {
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
     }
-    */
+
+
+//    func addPost() {
+//        db.collection("posts").addDocument(data:[
+//            "title": "글제목"
+//        ]){ (error) in
+//            if let error = error {
+//                print("Error")
+//            }else {
+//                print("Suscess")
+//            }
+//        }
+//
+//    }
+
 
 }
