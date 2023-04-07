@@ -133,8 +133,8 @@
 			children = (
 				7E729E4429D6C4140035E168 /* LoginViewController.swift */,
 				7E729E4629D6C44E0035E168 /* FeedViewController.swift */,
-				7E729E4829D6C4E70035E168 /* CreatePostViewController.swift */,
 				7E729E4A29D6C51D0035E168 /* SearchViewController.swift */,
+				7E729E4829D6C4E70035E168 /* CreatePostViewController.swift */,
 				7E729E4C29D6C53F0035E168 /* MyPageViewController.swift */,
 			);
 			path = View;
