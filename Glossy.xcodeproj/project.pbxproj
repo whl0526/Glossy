@@ -31,6 +31,9 @@
 		7E729E4F29D6C8F10035E168 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E729E4E29D6C8F10035E168 /* User.swift */; };
 		7E729E5129D6C9660035E168 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E729E5029D6C9660035E168 /* Post.swift */; };
 		7E729E5329D6C9950035E168 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E729E5229D6C9950035E168 /* Comment.swift */; };
+		7EE8170B29DEB2200064CC54 /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8170A29DEB2200064CC54 /* Extension_UIView.swift */; };
+		7EE8170F29DEB4F30064CC54 /* CustomFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8170D29DEB4F30064CC54 /* CustomFeedCollectionViewCell.swift */; };
+		7EE8171029DEB4F30064CC54 /* CustomFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EE8170E29DEB4F30064CC54 /* CustomFeedCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +58,9 @@
 		7E729E4E29D6C8F10035E168 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7E729E5029D6C9660035E168 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7E729E5229D6C9950035E168 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		7EE8170A29DEB2200064CC54 /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
+		7EE8170D29DEB4F30064CC54 /* CustomFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeedCollectionViewCell.swift; sourceTree = "<group>"; };
+		7EE8170E29DEB4F30064CC54 /* CustomFeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFeedCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 		04BF2EF429D66CA1001819F4 /* Glossy */ = {
 			isa = PBXGroup;
 			children = (
+				7EE8170929DEB1FF0064CC54 /* Extensions */,
 				7E0B76BF29DBDE5B002734F8 /* ViewModel */,
 				7E729E4329D6C2F40035E168 /* View */,
 				7E729E4129D6C2E70035E168 /* Model */,
@@ -131,6 +138,7 @@
 		7E729E4329D6C2F40035E168 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				7EE8170C29DEB4B40064CC54 /* CustomViews */,
 				7E729E4429D6C4140035E168 /* LoginViewController.swift */,
 				7E729E4629D6C44E0035E168 /* FeedViewController.swift */,
 				7E729E4A29D6C51D0035E168 /* SearchViewController.swift */,
@@ -138,6 +146,23 @@
 				7E729E4C29D6C53F0035E168 /* MyPageViewController.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		7EE8170929DEB1FF0064CC54 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7EE8170A29DEB2200064CC54 /* Extension_UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		7EE8170C29DEB4B40064CC54 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				7EE8170D29DEB4F30064CC54 /* CustomFeedCollectionViewCell.swift */,
+				7EE8170E29DEB4F30064CC54 /* CustomFeedCollectionViewCell.xib */,
+			);
+			path = CustomViews;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,6 +237,7 @@
 				04BF2EFF29D66CA3001819F4 /* Assets.xcassets in Resources */,
 				04BF2EFD29D66CA1001819F4 /* Main.storyboard in Resources */,
 				04BF2F0A29D66CE0001819F4 /* GoogleService-Info.plist in Resources */,
+				7EE8171029DEB4F30064CC54 /* CustomFeedCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -226,9 +252,11 @@
 				7E729E4929D6C4E70035E168 /* CreatePostViewController.swift in Sources */,
 				7E0B76C929DBDE99002734F8 /* MyPageViewModel.swift in Sources */,
 				7E0B76C329DBDE76002734F8 /* FeedViewModel.swift in Sources */,
+				7EE8170F29DEB4F30064CC54 /* CustomFeedCollectionViewCell.swift in Sources */,
 				7E0B76C129DBDE6A002734F8 /* LoginViewModel.swift in Sources */,
 				7E0B76C529DBDE85002734F8 /* CreatePostViewModel.swift in Sources */,
 				7E729E4D29D6C53F0035E168 /* MyPageViewController.swift in Sources */,
+				7EE8170B29DEB2200064CC54 /* Extension_UIView.swift in Sources */,
 				7E729E4529D6C4140035E168 /* LoginViewController.swift in Sources */,
 				7E729E4F29D6C8F10035E168 /* User.swift in Sources */,
 				7E0B76C729DBDE8F002734F8 /* SearchViewModel.swift in Sources */,
@@ -383,7 +411,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 4YH8347DW8;
+				DEVELOPMENT_TEAM = 99KS64JD42;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Glossy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
