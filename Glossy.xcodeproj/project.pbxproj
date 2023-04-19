@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		04BF2EF629D66CA1001819F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF2EF529D66CA1001819F4 /* AppDelegate.swift */; };
 		04BF2EF829D66CA1001819F4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BF2EF729D66CA1001819F4 /* SceneDelegate.swift */; };
-		04BF2EFD29D66CA1001819F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BF2EFB29D66CA1001819F4 /* Main.storyboard */; };
 		04BF2EFF29D66CA3001819F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04BF2EFE29D66CA3001819F4 /* Assets.xcassets */; };
 		04BF2F0229D66CA3001819F4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04BF2F0029D66CA3001819F4 /* LaunchScreen.storyboard */; };
 		04BF2F0A29D66CE0001819F4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 04BF2F0929D66CE0001819F4 /* GoogleService-Info.plist */; };
@@ -31,6 +30,8 @@
 		7E729E4F29D6C8F10035E168 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E729E4E29D6C8F10035E168 /* User.swift */; };
 		7E729E5129D6C9660035E168 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E729E5029D6C9660035E168 /* Post.swift */; };
 		7E729E5329D6C9950035E168 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E729E5229D6C9950035E168 /* Comment.swift */; };
+		7EC8E11E29EFA84D0035DC93 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 7EC8E11D29EFA84D0035DC93 /* SnapKit */; };
+		7EC8E12429EFB5BD0035DC93 /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EC8E12329EFB5BD0035DC93 /* TabBarViewController.swift */; };
 		7EE8170B29DEB2200064CC54 /* Extension_UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8170A29DEB2200064CC54 /* Extension_UIView.swift */; };
 		7EE8170F29DEB4F30064CC54 /* CustomFeedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7EE8170D29DEB4F30064CC54 /* CustomFeedCollectionViewCell.swift */; };
 		7EE8171029DEB4F30064CC54 /* CustomFeedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7EE8170E29DEB4F30064CC54 /* CustomFeedCollectionViewCell.xib */; };
@@ -40,7 +41,6 @@
 		04BF2EF229D66CA1001819F4 /* Glossy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Glossy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04BF2EF529D66CA1001819F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04BF2EF729D66CA1001819F4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		04BF2EFC29D66CA1001819F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04BF2EFE29D66CA3001819F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04BF2F0129D66CA3001819F4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04BF2F0329D66CA3001819F4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -58,6 +58,7 @@
 		7E729E4E29D6C8F10035E168 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		7E729E5029D6C9660035E168 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		7E729E5229D6C9950035E168 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		7EC8E12329EFB5BD0035DC93 /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		7EE8170A29DEB2200064CC54 /* Extension_UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension_UIView.swift; sourceTree = "<group>"; };
 		7EE8170D29DEB4F30064CC54 /* CustomFeedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFeedCollectionViewCell.swift; sourceTree = "<group>"; };
 		7EE8170E29DEB4F30064CC54 /* CustomFeedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomFeedCollectionViewCell.xib; sourceTree = "<group>"; };
@@ -71,6 +72,7 @@
 				04BF2F0D29D66D8B001819F4 /* FirebaseAnalytics in Frameworks */,
 				04BF2F0F29D66D8B001819F4 /* FirebaseAuth in Frameworks */,
 				04BF2F1129D66D8B001819F4 /* FirebaseFirestore in Frameworks */,
+				7EC8E11E29EFA84D0035DC93 /* SnapKit in Frameworks */,
 				04BF2F1529D66D8B001819F4 /* FirebaseStorage in Frameworks */,
 				04BF2F1329D66D8B001819F4 /* FirebaseFirestoreSwift in Frameworks */,
 			);
@@ -105,7 +107,6 @@
 				7E729E4129D6C2E70035E168 /* Model */,
 				04BF2EF529D66CA1001819F4 /* AppDelegate.swift */,
 				04BF2EF729D66CA1001819F4 /* SceneDelegate.swift */,
-				04BF2EFB29D66CA1001819F4 /* Main.storyboard */,
 				04BF2EFE29D66CA3001819F4 /* Assets.xcassets */,
 				04BF2F0029D66CA3001819F4 /* LaunchScreen.storyboard */,
 				04BF2F0329D66CA3001819F4 /* Info.plist */,
@@ -144,6 +145,7 @@
 				7E729E4829D6C4E70035E168 /* CreatePostViewController.swift */,
 				7E729E4A29D6C51D0035E168 /* SearchViewController.swift */,
 				7E729E4C29D6C53F0035E168 /* MyPageViewController.swift */,
+				7EC8E12329EFB5BD0035DC93 /* TabBarViewController.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -187,6 +189,7 @@
 				04BF2F1029D66D8B001819F4 /* FirebaseFirestore */,
 				04BF2F1229D66D8B001819F4 /* FirebaseFirestoreSwift */,
 				04BF2F1429D66D8B001819F4 /* FirebaseStorage */,
+				7EC8E11D29EFA84D0035DC93 /* SnapKit */,
 			);
 			productName = Glossy;
 			productReference = 04BF2EF229D66CA1001819F4 /* Glossy.app */;
@@ -218,6 +221,7 @@
 			mainGroup = 04BF2EE929D66CA1001819F4;
 			packageReferences = (
 				04BF2F0B29D66D8B001819F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				7EC8E11C29EFA84D0035DC93 /* XCRemoteSwiftPackageReference "SnapKit" */,
 			);
 			productRefGroup = 04BF2EF329D66CA1001819F4 /* Products */;
 			projectDirPath = "";
@@ -235,7 +239,6 @@
 			files = (
 				04BF2F0229D66CA3001819F4 /* LaunchScreen.storyboard in Resources */,
 				04BF2EFF29D66CA3001819F4 /* Assets.xcassets in Resources */,
-				04BF2EFD29D66CA1001819F4 /* Main.storyboard in Resources */,
 				04BF2F0A29D66CE0001819F4 /* GoogleService-Info.plist in Resources */,
 				7EE8171029DEB4F30064CC54 /* CustomFeedCollectionViewCell.xib in Resources */,
 			);
@@ -252,6 +255,7 @@
 				7E729E4929D6C4E70035E168 /* CreatePostViewController.swift in Sources */,
 				7E0B76C929DBDE99002734F8 /* MyPageViewModel.swift in Sources */,
 				7E0B76C329DBDE76002734F8 /* FeedViewModel.swift in Sources */,
+				7EC8E12429EFB5BD0035DC93 /* TabBarViewController.swift in Sources */,
 				7EE8170F29DEB4F30064CC54 /* CustomFeedCollectionViewCell.swift in Sources */,
 				7E0B76C129DBDE6A002734F8 /* LoginViewModel.swift in Sources */,
 				7E0B76C529DBDE85002734F8 /* CreatePostViewModel.swift in Sources */,
@@ -271,14 +275,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		04BF2EFB29D66CA1001819F4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				04BF2EFC29D66CA1001819F4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		04BF2F0029D66CA3001819F4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -416,7 +412,6 @@
 				INFOPLIST_FILE = Glossy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -444,7 +439,6 @@
 				INFOPLIST_FILE = Glossy/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -492,6 +486,14 @@
 				kind = branch;
 			};
 		};
+		7EC8E11C29EFA84D0035DC93 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -519,6 +521,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 04BF2F0B29D66D8B001819F4 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		7EC8E11D29EFA84D0035DC93 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7EC8E11C29EFA84D0035DC93 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
