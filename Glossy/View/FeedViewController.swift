@@ -26,6 +26,23 @@ extension Test {
 
 class FeedViewController: UIViewController {
     
+    let box: UIView = {
+        let view = UIView()
+        return view
+    }()
+    
+    let collectionView: UICollectionView = {
+        let layout = UICollectionViewFlowLayout()
+        layout.minimumLineSpacing = 10
+        
+        layout.scrollDirection = .vertical
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 0, bottom: 0, right: 0)
+        
+        let cv = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        
+        return cv
+    }()
+    
     let cellName = "CustomFeedCollectionViewCell"
     let cellReuseIdentifier = "customFeedCell"
     let testList = Test.data
@@ -36,12 +53,19 @@ class FeedViewController: UIViewController {
         collectionView.register(nibName, forCellWithReuseIdentifier: cellReuseIdentifier)
     }
 
-    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        collectionView.delegate = self
+        collectionView.dataSource = self
+        self.view.addSubview(collectionView)
         self.registerXib()
+        
+        collectionView.snp.makeConstraints {
+            $0.height.width.equalToSuperview()
+            $0.top.leading.bottom.trailing.equalToSuperview()
+        }
+        
         // Do any additional setup after loading the view.
     }
     
